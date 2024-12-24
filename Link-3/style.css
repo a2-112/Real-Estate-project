@@ -140,6 +140,7 @@
   .image-section img {
       width: 75%;
       height: auto;
+      margin: 10px;
     }
     .content h2 {
       color: var(--main-color);

@@ -117,6 +117,7 @@
   .image img {
       width: 80%;
       height: auto;
+      margin: 10px;
     }
     .rent-section h2 {
       color: var(--main-color);

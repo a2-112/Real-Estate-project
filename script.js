@@ -2,9 +2,9 @@ let currentDot = 0;
 const dots = document.querySelectorAll('.dot');
 const links = [
   '../index.html', // Replace with your desired page URL
-  '/techy-jaunt-ass/Link-1/link1.html',
-  '/techy-jaunt-ass/Link-2/link2.html',
-  '/techy-jaunt-ass/Link-3/custom.html'
+  '/Link-1/link1.html',
+  '/Link-2/link2.html',
+  '/Link-3/custom.html'
 ];
 
 function activateDot(index) {

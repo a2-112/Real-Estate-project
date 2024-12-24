@@ -1,0 +1,233 @@
+ @import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&family=Spicy+Rice&display=swap');
+
+    body {
+      font-family: "Roboto", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--off-text-color);
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+      height: 100vh;
+    }
+    :root {
+  --main-color: #0079f1;
+  --primary-color: #4A90E2;
+  --secondary-color: #A0C4FF;
+  --off-text-color: #FFFFFF;
+  --tertiary-color: #FFC107;
+  --second-surface-color: #2D3ECF;
+  --accent-color: #00FF00;
+  --neutral-color: #E0E0E0;
+  --neutral-variant-color: #4b4949;
+  --error-color: #FF0000;
+}
+
+header {
+  background: var(--main-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.header {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 5px;
+
+}
+.header img{
+    width: 30px;
+    height: 30px;
+}
+.actions {
+ margin-right: 10px;
+ display: flex;
+ align-items: center;
+ gap: 10px;
+}
+/* .bar-item{
+      width: 20px;
+      height: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      z-index: 1000;
+}
+.bar {
+      width: 100%;
+      height: 4px;
+        background-color: #333;
+        
+} */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab {
+  background: white;
+  color: var(--primary-color);
+ border: none;
+ border-bottom: 3px solid;
+  padding: 10px 20px;
+  margin: 10px;
+  font-weight:bold ;
+  
+}
+
+.tab .active {
+  background:var(--primary-color);
+  color: white;
+  border: none;
+  border-bottom: 3px solid;
+}
+
+.search-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+  .search-icon {
+      position: absolute;
+      /* right: 10px; */
+      top: 32%;
+      transform: translateY(-50%);
+      color: gray;
+      pointer-events: none;
+      padding-left: 15px;
+}
+.search-bar {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  background-color: #e6e8ec;
+}
+.search-bar::placeholder{
+text-align: center;
+font-weight: bold;
+}
+h4{
+  color: var(--main-color);
+}
+.price-filter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.price-filter input {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #e6e8ec;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+ 
+}
+
+.bedroom-filter {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 10px;
+   border: 1px solid var(--main-color);
+  border-radius: 5px;
+  background-color: #e6e8ec;
+}
+
+.bedroom-filter button {
+  background-color: #e6e8ec;
+  color: var(--neutral-variant-color);
+  border: none;
+ font-weight: bold;
+}
+
+.show-ads {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.properties {
+  padding: 20px;
+  color: var(--main-color);
+}
+
+.property-cards {
+   display: flex;
+   justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap; 
+      padding: 20px;
+}
+.property-cards img{
+    width: 30%; /* Each image takes up 30% of the row */
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-cards img:hover {
+      transform: scale(1.1); /* Zoom effect on hover */
+       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    } 
+
+     @media screen and (max-width: 768px) {
+      /* .card{
+        width: 100%;
+      } */
+      .property-cards img {
+        width: 50%; /* Adjust to 2 images per row on smaller screens */
+       }
+    } 
+
+    @media screen and (max-width: 480px) {
+      .property-cards img {
+        width: 100%; /* Adjust to 1 image per row on very small screens */
+      }
+    } 
+
+.card {
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+  font-size: small;
+  color: var(--main-color);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  background: #f8f8f8;
+  padding: 10px 0;
+  
+}
+
+.footer-nav button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}

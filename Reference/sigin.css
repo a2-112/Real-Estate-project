@@ -98,7 +98,8 @@ button a{
 }
   @media(max-width:500px) {
   form {
-      width: 100%;
+      width: 90%;
       height: auto;
+      margin: 16px;
     }
 }
